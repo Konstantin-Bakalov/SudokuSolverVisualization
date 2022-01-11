@@ -1,3 +1,3 @@
 # SudokuSolverVisualization
 
-![github](https://imgflip.com/gif/60v7ll)
+<img src="video/demo.gif" width="500" height="600">
