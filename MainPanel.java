@@ -122,6 +122,7 @@ public class MainPanel extends JPanel implements ActionListener, KeyListener {
         }
         else if(c == 'r') {
             Frame.setBoard();
+            this.setBackground(Color.YELLOW);
             running = false;
             Frame.printTimer.stop();
             list.clear();
@@ -170,7 +171,10 @@ public class MainPanel extends JPanel implements ActionListener, KeyListener {
             }
             list.remove(0);
         }
-        else Frame.printTimer.stop();
+        else {
+            Frame.printTimer.stop();
+            this.setBackground(Color.GREEN);
+        }
     }
 
     public boolean allNull(int[][] a) {
