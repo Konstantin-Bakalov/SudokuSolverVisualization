@@ -162,7 +162,7 @@ public class MainPanel extends JPanel implements ActionListener, KeyListener {
         if(!list.isEmpty()) {
             for (int i = 0; i < Frame.N; i++) {
                 for (int j = 0; j < Frame.N; j++) {
-                    if (Frame.board[i][j] != 0) {
+                    if (list.get(0)[i][j] != 0) {
                         Frame.buttons[i][j].setText(list.get(0)[i][j] + "");
                     }
                     else Frame.buttons[i][j].setText("");
